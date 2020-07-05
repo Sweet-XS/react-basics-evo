@@ -11,6 +11,7 @@ import StatyCounter from './components/StatyCounter';
 import EventyHandFunk from './components/EventyHandFunk';
 import EventyHandClassy from './components/EventyHandClassy';
 import EventyBind from './components/EventyBind';
+import ParentComponent from './components/ParentComponent';
 
 function App() {
   return (
@@ -28,10 +29,11 @@ function App() {
       <ProperClassy name = "Peter Parker" heroName = "Spiderman"/>
       <ProperClassy name = "Tony Stark" heroName = "Ironman"/>
       <StatyClassy/>
-      <StatyCounter/>*/}
+      <StatyCounter/>
       <EventyHandFunk/>
       <EventyHandClassy/>
-      <EventyBind/>
+      <EventyBind/>*/}
+      <ParentComponent/>
     </div>
   );
 }

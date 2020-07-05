@@ -14,25 +14,25 @@ class EventyBind extends Component{
     //2nd best
     clickConsHandler(){
         this.setState({
-            message: 'Using Constructor Bind!'
+            message: 'Using Constructor Bind, 2nd best!'
         })
     }
     //it causes performance issues, so avoid
     clickBindHandler(){
         this.setState({
-            message: 'Using Bind!'
+            message: 'Using Bind, avoid this one!'
         })
     }
     //3rd best
     clickArrowHandler(){
         this.setState({
-            message: 'Using Arrow Function from render!'
+            message: 'Using Arrow Function from render, 3rd best!'
         })
     }
     //best 
     clickArrowFunkHandler = () => {
         this.setState({
-            message: 'Using Arrow Function!'
+            message: 'Using Arrow Function, this is the best!'
         })
     }    
 
