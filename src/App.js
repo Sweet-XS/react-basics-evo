@@ -12,6 +12,7 @@ import EventyHandFunk from './components/EventyHandFunk';
 import EventyHandClassy from './components/EventyHandClassy';
 import EventyBind from './components/EventyBind';
 import ParentComponent from './components/ParentComponent';
+import ConditionalRendery from './components/ConditionalRendery';
 
 function App() {
   return (
@@ -32,8 +33,9 @@ function App() {
       <StatyCounter/>
       <EventyHandFunk/>
       <EventyHandClassy/>
-      <EventyBind/>*/}
-      <ParentComponent/>
+      <EventyBind/>
+      <ParentComponent/>*/}
+      <ConditionalRendery/>
     </div>
   );
 }
