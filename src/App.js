@@ -8,6 +8,9 @@ import ProperFunk from './components/ProperFunk';
 import ProperClassy from './components/ProperClassy';
 import StatyClassy from './components/StatyClassy';
 import StatyCounter from './components/StatyCounter';
+import EventyHandFunk from './components/EventyHandFunk';
+import EventyHandClassy from './components/EventyHandClassy';
+import EventyBind from './components/EventyBind';
 
 function App() {
   return (
@@ -23,9 +26,12 @@ function App() {
       </ProperFunk>
       <ProperFunk name = "Bruce" heroName = "Batman"/>
       <ProperClassy name = "Peter Parker" heroName = "Spiderman"/>
-      <ProperClassy name = "Tony Stark" heroName = "Ironman"/>*/}
+      <ProperClassy name = "Tony Stark" heroName = "Ironman"/>
       <StatyClassy/>
-      <StatyCounter/>
+      <StatyCounter/>*/}
+      <EventyHandFunk/>
+      <EventyHandClassy/>
+      <EventyBind/>
     </div>
   );
 }
