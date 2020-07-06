@@ -16,6 +16,7 @@ import ListRender from './components/ListRendery';
 import Stylesheet from './components/Stylesheet';
 import StyleInline from './components/StyleInline';
 import StyleModule from './components/StyleModule';
+import FormBasic from './components/FormBasic';
 
 function App() {
   return (
@@ -39,10 +40,11 @@ function App() {
       <EventyBind/>
       <ParentComponent/>
       <ConditionalRendery/>
-      <ListRender/>*/}
+      <ListRender/>
       <Stylesheet bleu={true}/>
       <StyleInline/>
-      <StyleModule/>
+      <StyleModule/>*/}
+      <FormBasic/>
     </div>
   );
 }
