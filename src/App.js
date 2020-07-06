@@ -13,7 +13,7 @@ import EventyHandClassy from './components/EventyHandClassy';
 import EventyBind from './components/EventyBind';
 import ParentComponent from './components/ParentComponent';
 import ConditionalRendery from './components/ConditionalRendery';
-import ListNames from './components/ListNames';
+import ListRender from './components/ListRendery';
 
 function App() {
   return (
@@ -37,7 +37,7 @@ function App() {
       <EventyBind/>
       <ParentComponent/>
       <ConditionalRendery/>*/}
-      <ListNames/>
+      <ListRender/>
     </div>
   );
 }
