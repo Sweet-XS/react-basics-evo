@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Funky from './components/Funk.js';
 import Classy from './components/Classy';
@@ -14,6 +13,9 @@ import EventyBind from './components/EventyBind';
 import ParentComponent from './components/ParentComponent';
 import ConditionalRendery from './components/ConditionalRendery';
 import ListRender from './components/ListRendery';
+import Stylesheet from './components/Stylesheet';
+import StyleInline from './components/StyleInline';
+import StyleModule from './components/StyleModule';
 
 function App() {
   return (
@@ -36,8 +38,11 @@ function App() {
       <EventyHandClassy/>
       <EventyBind/>
       <ParentComponent/>
-      <ConditionalRendery/>*/}
-      <ListRender/>
+      <ConditionalRendery/>
+      <ListRender/>*/}
+      <Stylesheet bleu={true}/>
+      <StyleInline/>
+      <StyleModule/>
     </div>
   );
 }
