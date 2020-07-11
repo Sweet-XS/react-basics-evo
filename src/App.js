@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import './App.css';
 import Funky from './components/Funk.js';
 import Classy from './components/Classy';
@@ -17,6 +17,14 @@ import Stylesheet from './components/Stylesheet';
 import StyleInline from './components/StyleInline';
 import StyleModule from './components/StyleModule';
 import FormBasic from './components/FormBasic';
+import LifecycleA from './components/LifecycleA';
+import Fragmenty from './components/Fragmenty';
+import FragmentyTable from './components/FragmentyTable';
+import ParentComp from './components/PureCompsParentReg';
+import PureCompsParentReg from './components/PureCompsParentReg';
+import MemoCompRegParent from './components/MemoCompRegParent';
+import RefsDemo from './components/RefsDemo';
+import RefsParentInput from './components/RefsParentInput';
 
 function App() {
   return (
@@ -43,8 +51,15 @@ function App() {
       <ListRender/>
       <Stylesheet bleu={true}/>
       <StyleInline/>
-      <StyleModule/>*/}
+      <StyleModule/>
       <FormBasic/>
+      <LifecycleA/>
+      <Fragmenty/>
+      <FragmentyTable/>
+      <PureCompsParentReg/>
+      <MemoCompRegParent/>
+      <RefsDemo/>*/}
+      <RefsParentInput/>
     </div>
   );
 }
