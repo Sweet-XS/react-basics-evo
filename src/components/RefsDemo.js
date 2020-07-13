@@ -13,8 +13,8 @@ class RefsDemo extends Component{
     }
 
     componentDidMount(){
-        /*this.inputRef.current.focus()
-        console.log(this.inputRef)*/
+        this.inputRef.current.focus()
+        console.log(this.inputRef)
         //older refs approach
         if(this.cbRef){
             this.cbRef.focus()

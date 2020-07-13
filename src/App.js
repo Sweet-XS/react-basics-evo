@@ -25,6 +25,7 @@ import PureCompsParentReg from './components/PureCompsParentReg';
 import MemoCompRegParent from './components/MemoCompRegParent';
 import RefsDemo from './components/RefsDemo';
 import RefsParentInput from './components/RefsParentInput';
+import PortalDemo from './components/PortalDemo';
 
 function App() {
   return (
@@ -58,8 +59,9 @@ function App() {
       <FragmentyTable/>
       <PureCompsParentReg/>
       <MemoCompRegParent/>
-      <RefsDemo/>*/}
-      <RefsParentInput/>
+      <RefsDemo/>
+      <RefsParentInput/>*/}
+      <PortalDemo/>
     </div>
   );
 }
