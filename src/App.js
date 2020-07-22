@@ -26,6 +26,7 @@ import MemoCompRegParent from './components/MemoCompRegParent';
 import RefsDemo from './components/RefsDemo';
 import RefsParentInput from './components/RefsParentInput';
 import PortalDemo from './components/PortalDemo';
+import ErrorBeta from './components/ErrorBeta';
 
 function App() {
   return (
@@ -60,8 +61,9 @@ function App() {
       <PureCompsParentReg/>
       <MemoCompRegParent/>
       <RefsDemo/>
-      <RefsParentInput/>*/}
-      <PortalDemo/>
+      <RefsParentInput/>
+      <PortalDemo/>*/}
+      <ErrorBeta/>
     </div>
   );
 }
