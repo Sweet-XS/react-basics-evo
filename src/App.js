@@ -27,6 +27,8 @@ import RefsDemo from './components/RefsDemo';
 import RefsParentInput from './components/RefsParentInput';
 import PortalDemo from './components/PortalDemo';
 import ErrorBeta from './components/ErrorBeta';
+import HocIncCount from './components/HocIncCount';
+import HocHoverCount from './components/HocHoverCount';
 
 function App() {
   return (
@@ -62,8 +64,10 @@ function App() {
       <MemoCompRegParent/>
       <RefsDemo/>
       <RefsParentInput/>
-      <PortalDemo/>*/}
-      <ErrorBeta/>
+      <PortalDemo/>
+      <ErrorBeta/>*/}
+      <HocIncCount heroName = 'Wonder Woman'/>
+      <HocHoverCount />
     </div>
   );
 }
