@@ -29,6 +29,11 @@ import PortalDemo from './components/PortalDemo';
 import ErrorBeta from './components/ErrorBeta';
 import HocIncCount from './components/HocIncCount';
 import HocHoverCount from './components/HocHoverCount';
+import RenderPropsClickCount from './components/RenderPropsClickCount';
+import RenderPropsHoverCount from './components/RenderPropsHoverCount';
+import RenderPropsUser from './components/RenderPropsUser';
+import RenderPropsCounter from './components/RenderPropsCounter';
+import RenderPropsCounterChildren from './components/RenderPropsCounterChildren'
 
 function App() {
   return (
@@ -65,9 +70,21 @@ function App() {
       <RefsDemo/>
       <RefsParentInput/>
       <PortalDemo/>
-      <ErrorBeta/>*/}
+      <ErrorBeta/>
       <HocIncCount heroName = 'Wonder Woman'/>
       <HocHoverCount />
+      <RenderPropsUser render = {(isLoggedIn) => isLoggedIn ? 'Vanessa' : 'Guest'}/>*/}
+      <RenderPropsCounterChildren>
+        {(count, incrementCount) => ( 
+          <RenderPropsClickCount count = {count} incrementCount = {incrementCount}/>
+        )} 
+      </RenderPropsCounterChildren>
+      <RenderPropsCounter render = {(count, incrementCount) => 
+        <RenderPropsClickCount count = {count} incrementCount = {incrementCount}/>} 
+      />
+      <RenderPropsCounter render = {(count, incrementCount) => 
+        <RenderPropsHoverCount count = {count} incrementCount = {incrementCount}/>} 
+      />
     </div>
   );
 }
