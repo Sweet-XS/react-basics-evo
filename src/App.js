@@ -34,6 +34,8 @@ import RenderPropsHoverCount from './components/RenderPropsHoverCount';
 import RenderPropsUser from './components/RenderPropsUser';
 import RenderPropsCounter from './components/RenderPropsCounter';
 import RenderPropsCounterChildren from './components/RenderPropsCounterChildren'
+import { ComicProvider } from './components/comicContext';
+import ContextA from './components/ContextA';
 
 function App() {
   return (
@@ -73,7 +75,7 @@ function App() {
       <ErrorBeta/>
       <HocIncCount heroName = 'Wonder Woman'/>
       <HocHoverCount />
-      <RenderPropsUser render = {(isLoggedIn) => isLoggedIn ? 'Vanessa' : 'Guest'}/>*/}
+      <RenderPropsUser render = {(isLoggedIn) => isLoggedIn ? 'Vanessa' : 'Guest'}/>
       <RenderPropsCounterChildren>
         {(count, incrementCount) => ( 
           <RenderPropsClickCount count = {count} incrementCount = {incrementCount}/>
@@ -84,7 +86,11 @@ function App() {
       />
       <RenderPropsCounter render = {(count, incrementCount) => 
         <RenderPropsHoverCount count = {count} incrementCount = {incrementCount}/>} 
-      />
+      />*/}
+      <ComicProvider value = "Spiderman">
+        <ContextA/>
+      </ComicProvider>
+      <ContextA/>
     </div>
   );
 }
